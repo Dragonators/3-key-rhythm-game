@@ -1,18 +1,32 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.Events;
+using UnityEngine.EventSystems;
+using DanielLochner.Assets.SimpleScrollSnap;
 
-public class menu : MonoBehaviour
-{
-    // Start is called before the first frame update
-    void Start()
+    public class menu : MonoBehaviour
     {
-        
-    }
+        public Text title;
+        public Text bscore;
+        public int selectid;
+        public AudioSource[] allbgm=new AudioSource[6];
+        public AudioClip turn;
+        public SimpleScrollSnap scrollSnap;
 
-    // Update is called once per frame
-    void Update()
-    {
+    
+        void Start()
+        {
         
+        }
+        void Update()
+        {
+        
+        }
+        public void tested()
+        {
+            Debug.Log(scrollSnap.CurrentPanel);
+        }
     }
-}
+//}
