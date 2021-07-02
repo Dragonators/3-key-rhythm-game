@@ -43,6 +43,8 @@
      <Compile Include="Assets\Simple Scroll-Snap\Examples\Shared Resources\Scripts\ExpandInformation.cs" />
      <Compile Include="Assets\Simple Scroll-Snap\Examples\Example 5 (Dynamic Content)\Scripts\DynamicContentController.cs" />
      <Compile Include="Assets\Simple Scroll-Snap\Scripts\Runtime\SimpleScrollSnap.cs" />
+     <Compile Include="Assets\scripts\LoadList.cs" />
+     <None Include="Assets\Resources\songlist.txt" />
     <Reference Include="UnityEngine">
         <HintPath>C:/Program Files/Unity 2021.1.12f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>

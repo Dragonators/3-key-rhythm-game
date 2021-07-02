@@ -1147,7 +1147,7 @@ AudioSource:
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -1274,7 +1274,7 @@ AudioSource:
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -1521,7 +1521,7 @@ AudioSource:
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -1807,7 +1807,7 @@ AudioSource:
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -2696,19 +2696,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1200764655}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 699259018}
-        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
-        m_MethodName: PlayOneShot
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1200764655
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2966,7 +2954,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 73
+    m_FontSize: 57
     m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 10
@@ -3474,8 +3462,20 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1450365325}
-        m_TargetAssemblyTypeName: DanielLochner.Assets.SimpleScrollSnap.menu, Assembly-CSharp
-        m_MethodName: tested
+        m_TargetAssemblyTypeName: menu, Assembly-CSharp
+        m_MethodName: changebgm
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1450365325}
+        m_TargetAssemblyTypeName: menu, Assembly-CSharp
+        m_MethodName: nowinform
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3816,6 +3816,7 @@ GameObject:
   - component: {fileID: 1450365322}
   - component: {fileID: 1450365321}
   - component: {fileID: 1450365325}
+  - component: {fileID: 1450365326}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -3922,18 +3923,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 008561064fcbf8c4ea82d2d86463771c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  title: {fileID: 0}
-  bscore: {fileID: 0}
+  title: {fileID: 1268488713}
+  bscore: {fileID: 2138189905}
   selectid: 0
   allbgm:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 699259018}
+  - {fileID: 642333141}
+  - {fileID: 1702209339}
+  - {fileID: 445130356}
+  - {fileID: 818528551}
   - {fileID: 0}
   turn: {fileID: 0}
-  scrollSnap: {fileID: 1399182491}
+  panels: {fileID: 1399182491}
+  Load: {fileID: 1450365326}
+--- !u!114 &1450365326
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1450365320}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e85e7418f3311b143a81d0ab2f949f35, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1702209337
 GameObject:
   m_ObjectHideFlags: 0
@@ -3979,7 +3993,7 @@ AudioSource:
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
