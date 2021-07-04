@@ -18,22 +18,24 @@ using System.IO;
                 string[] _fileData=fileData[i].Split(',');
                 song.id=_fileData[0];
                 song.title=_fileData[1];
-                song.bpm=_fileData[2];
+                song.bpm=float.Parse(_fileData[2]);
                 song.bestscore=_fileData[3];
                 song.artist=_fileData[4];
+                song.diff_e=_fileData[5];
+                song.diff_n=_fileData[6];
+                song.diff_h=_fileData[7];
                 songs.Add(song);
             }
-        }
-        void Start()
-        {
-            loadcsv();
         }
     }
     public struct songinform
     {
         public string id;
         public string title;
-        public string bpm;
+        public float bpm;
         public string bestscore;
         public string artist;
+        public string diff_e;
+        public string diff_n;
+        public string diff_h;
     }

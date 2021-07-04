@@ -1,6 +1,6 @@
-id,title,bpm,bestscore,artist
-1,furioso melodia,155,00000000,a
-2,PANDORA PARADOXXX,150,00000000,a
-3,Grievous Lady,210,00000000,a
-4,Tempestissimo,231,00000000,a
-5,World Vanquisher,170,00000000,a
+id,title,bpm,bestscore,artist,difiiculty_e,difiiculty_n,difiiculty_h
+1,furioso melodia,155.0,00000000,a,3,7,10+
+2,PANDORA PARADOXXX,150.0,00000000,a,3,7,11
+3,Grievous Lady,210.0,00000000,a,3,8,11
+4,Tempestissimo,231.0,00000000,a,3,7,11
+5,World Vanquisher,170.0,00000000,a,3,8,10+
