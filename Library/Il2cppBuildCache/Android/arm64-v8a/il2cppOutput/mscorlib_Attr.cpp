@@ -5330,12 +5330,12 @@ static void Encoder_t5095F24D3B1D0F70D08762B980731B9F1ADEE56A_CustomAttributesCa
 static void Encoder_t5095F24D3B1D0F70D08762B980731B9F1ADEE56A_CustomAttributesCacheGenerator_Encoder_GetByteCount_m0B655A967580578051AA5297A238949C0646E6B1(CustomAttributesCache* cache)
 {
 	{
-		ComVisibleAttribute_tCE3DF5E341F3ECE4C81FE85C15B3D782AB302A2A * tmp = (ComVisibleAttribute_tCE3DF5E341F3ECE4C81FE85C15B3D782AB302A2A *)cache->attributes[0];
-		ComVisibleAttribute__ctor_mBDE8E12A0233C07B98D6D5103511F4DD5B1FC172(tmp, false, NULL);
+		CLSCompliantAttribute_tA28EF6D4ADBD3C5C429DE9A70DD1E927C8906249 * tmp = (CLSCompliantAttribute_tA28EF6D4ADBD3C5C429DE9A70DD1E927C8906249 *)cache->attributes[0];
+		CLSCompliantAttribute__ctor_m340EDA4DA5E45506AD631FE84241ADFB6B3F0270(tmp, false, NULL);
 	}
 	{
-		CLSCompliantAttribute_tA28EF6D4ADBD3C5C429DE9A70DD1E927C8906249 * tmp = (CLSCompliantAttribute_tA28EF6D4ADBD3C5C429DE9A70DD1E927C8906249 *)cache->attributes[1];
-		CLSCompliantAttribute__ctor_m340EDA4DA5E45506AD631FE84241ADFB6B3F0270(tmp, false, NULL);
+		ComVisibleAttribute_tCE3DF5E341F3ECE4C81FE85C15B3D782AB302A2A * tmp = (ComVisibleAttribute_tCE3DF5E341F3ECE4C81FE85C15B3D782AB302A2A *)cache->attributes[1];
+		ComVisibleAttribute__ctor_mBDE8E12A0233C07B98D6D5103511F4DD5B1FC172(tmp, false, NULL);
 	}
 }
 static void Encoder_t5095F24D3B1D0F70D08762B980731B9F1ADEE56A_CustomAttributesCacheGenerator_Encoder_GetBytes_m3BA7B16251ACB8195AA00A51C4C80E55F12FEEE8(CustomAttributesCache* cache)
@@ -6332,12 +6332,12 @@ static void MethodBase_t_CustomAttributesCacheGenerator_MethodBase_GetGenericArg
 static void MethodBase_t_CustomAttributesCacheGenerator_MethodBase_Invoke_m5DA5E74F34F8FFA8133445BAE0266FD54F7D4EB3(CustomAttributesCache* cache)
 {
 	{
-		DebuggerHiddenAttribute_tD84728997C009D6F540FB29D88F032350E046A88 * tmp = (DebuggerHiddenAttribute_tD84728997C009D6F540FB29D88F032350E046A88 *)cache->attributes[0];
-		DebuggerHiddenAttribute__ctor_mB40799BB5DAFE439BEFE895836CF792B8DBEA7F3(tmp, NULL);
+		DebuggerStepThroughAttribute_t4058F4B4E5E1DF6883627F75165741AF154B781F * tmp = (DebuggerStepThroughAttribute_t4058F4B4E5E1DF6883627F75165741AF154B781F *)cache->attributes[0];
+		DebuggerStepThroughAttribute__ctor_m2B40F019B0DF22CF7A815AAB3D2D027225D59D85(tmp, NULL);
 	}
 	{
-		DebuggerStepThroughAttribute_t4058F4B4E5E1DF6883627F75165741AF154B781F * tmp = (DebuggerStepThroughAttribute_t4058F4B4E5E1DF6883627F75165741AF154B781F *)cache->attributes[1];
-		DebuggerStepThroughAttribute__ctor_m2B40F019B0DF22CF7A815AAB3D2D027225D59D85(tmp, NULL);
+		DebuggerHiddenAttribute_tD84728997C009D6F540FB29D88F032350E046A88 * tmp = (DebuggerHiddenAttribute_tD84728997C009D6F540FB29D88F032350E046A88 *)cache->attributes[1];
+		DebuggerHiddenAttribute__ctor_mB40799BB5DAFE439BEFE895836CF792B8DBEA7F3(tmp, NULL);
 	}
 }
 static void MethodBase_t_CustomAttributesCacheGenerator_MethodBase_t____IsConstructor_PropertyInfo(CustomAttributesCache* cache)
@@ -6856,12 +6856,12 @@ static void MonoMethod_t_CustomAttributesCacheGenerator_MonoMethod_MakeGenericMe
 static void MonoCMethod_t5591743036BD4964AD4CFC5C5FE5F945E9E44097_CustomAttributesCacheGenerator_MonoCMethod_Invoke_mB8EDF16C204034CF948B9B1AF36EF9B2C7A14696(CustomAttributesCache* cache)
 {
 	{
-		DebuggerHiddenAttribute_tD84728997C009D6F540FB29D88F032350E046A88 * tmp = (DebuggerHiddenAttribute_tD84728997C009D6F540FB29D88F032350E046A88 *)cache->attributes[0];
-		DebuggerHiddenAttribute__ctor_mB40799BB5DAFE439BEFE895836CF792B8DBEA7F3(tmp, NULL);
+		DebuggerStepThroughAttribute_t4058F4B4E5E1DF6883627F75165741AF154B781F * tmp = (DebuggerStepThroughAttribute_t4058F4B4E5E1DF6883627F75165741AF154B781F *)cache->attributes[0];
+		DebuggerStepThroughAttribute__ctor_m2B40F019B0DF22CF7A815AAB3D2D027225D59D85(tmp, NULL);
 	}
 	{
-		DebuggerStepThroughAttribute_t4058F4B4E5E1DF6883627F75165741AF154B781F * tmp = (DebuggerStepThroughAttribute_t4058F4B4E5E1DF6883627F75165741AF154B781F *)cache->attributes[1];
-		DebuggerStepThroughAttribute__ctor_m2B40F019B0DF22CF7A815AAB3D2D027225D59D85(tmp, NULL);
+		DebuggerHiddenAttribute_tD84728997C009D6F540FB29D88F032350E046A88 * tmp = (DebuggerHiddenAttribute_tD84728997C009D6F540FB29D88F032350E046A88 *)cache->attributes[1];
+		DebuggerHiddenAttribute__ctor_mB40799BB5DAFE439BEFE895836CF792B8DBEA7F3(tmp, NULL);
 	}
 }
 static void MonoCMethod_t5591743036BD4964AD4CFC5C5FE5F945E9E44097_CustomAttributesCacheGenerator_MonoCMethod_Invoke_m01DBFC79B310C94580DD323DD0AB9C56949A3374(CustomAttributesCache* cache)

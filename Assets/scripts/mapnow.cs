@@ -17,5 +17,12 @@ public class mapnow
     public static float judge_on=0.08f;
     public static float advanceposition=0.8f;
     public static float scale;
+    public static float offset=0f;
+    public static int score;
+    public static int highscore;
+    public static int n_P;
+    public static int n_Gr;
+    public static int n_Gd;
+    public static int n_miss;
 
 }

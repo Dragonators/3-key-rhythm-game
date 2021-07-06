@@ -36,11 +36,13 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets\scripts\clickeffect.cs" />
      <Compile Include="Assets\scripts\menu.cs" />
      <Compile Include="Assets\Simple Scroll-Snap\Examples\Example 3 (Slot Machine)\Scripts\SlotMachine.cs" />
      <Compile Include="Assets\Simple Scroll-Snap\Examples\Example 6 (3D Shape Selection)\Scripts\Rotator.cs" />
      <Compile Include="Assets\Simple Scroll-Snap\Examples\Example 1 (macOS Finder)\Scripts\FileSelected.cs" />
      <Compile Include="Assets\scripts\LoadList.cs" />
+     <Compile Include="Assets\scripts\Score.cs" />
      <Compile Include="Assets\scripts\mapnow.cs" />
      <Compile Include="Assets\scripts\clicknote.cs" />
      <Compile Include="Assets\Simple Scroll-Snap\Examples\Shared Resources\Scripts\ExpandInformation.cs" />

@@ -9761,6 +9761,24 @@ IL_0053:
 		return;
 	}
 }
+// System.Void System.IO.StreamWriter::.ctor(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void StreamWriter__ctor_mE341C28EFA3FE0484823233273DBE251A11BD4FC (StreamWriter_t3E267B7F3C9522AF936C26ABF158398BB779FAF6 * __this, String_t* ___path0, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&StreamWriter_t3E267B7F3C9522AF936C26ABF158398BB779FAF6_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		String_t* L_0 = ___path0;
+		IL2CPP_RUNTIME_CLASS_INIT(StreamWriter_t3E267B7F3C9522AF936C26ABF158398BB779FAF6_il2cpp_TypeInfo_var);
+		Encoding_tE901442411E2E70039D2A4AE77FB81C3D6064827 * L_1;
+		L_1 = StreamWriter_get_UTF8NoBOM_mF4A5DBCC4B3E4B3AE868C54DB743D8875B329C38(/*hidden argument*/NULL);
+		StreamWriter__ctor_m767F52D11F1D8342131B226733F66BA5CEAD36EB(__this, L_0, (bool)0, L_1, ((int32_t)1024), /*hidden argument*/NULL);
+		return;
+	}
+}
 // System.Void System.IO.StreamWriter::.ctor(System.String,System.Boolean,System.Text.Encoding)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void StreamWriter__ctor_m8E689BB489D6CA87348E79EBF05BA4E3F6D4B9A4 (StreamWriter_t3E267B7F3C9522AF936C26ABF158398BB779FAF6 * __this, String_t* ___path0, bool ___append1, Encoding_tE901442411E2E70039D2A4AE77FB81C3D6064827 * ___encoding2, const RuntimeMethod* method)
 {

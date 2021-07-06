@@ -15,6 +15,9 @@ using UnityEngine.SceneManagement;
         public Text easy;
         public Text normal;
         public Text hard;
+        public GameObject auto;
+        public GameObject read;
+        public InputField offset;
         public int selectid;
         public AudioSource[] allbgm=new AudioSource[6];
         public AudioSource nowbgm;
@@ -22,12 +25,14 @@ using UnityEngine.SceneManagement;
         public GameObject settings;
         public SimpleScrollSnap panels;
         public LoadList Load;
+        private bool mode=true;
 
     
         void Start()
         {
             Application.targetFrameRate=240;
             nowbgm.clip=allbgm[0].clip;
+            Load.Starting();
             Load.loadcsv();
             changepanel();
             GameObject.DontDestroyOnLoad(nowbgm);
@@ -54,14 +59,33 @@ using UnityEngine.SceneManagement;
         }
         public void openset()
         {
+            offset.text=(mapnow.offset*1000).ToString();
             settings.SetActive(true);
         }
         public void storeset()
         {
+            float a=mapnow.offset;
+            if(float.TryParse(offset.text,out mapnow.offset))mapnow.offset/=1000;
+            else mapnow.offset=a;
             settings.SetActive(false);
         }
         public void cancelset()
         {
             settings.SetActive(false);
+        }
+        public void selmode()
+        {
+            if(mode)
+            {
+                mode=false;
+                auto.SetActive(false);
+                read.SetActive(true);
+            }
+            else
+            {
+                mode=true;
+                auto.SetActive(true);
+                read.SetActive(false);
+            }
         }
     }

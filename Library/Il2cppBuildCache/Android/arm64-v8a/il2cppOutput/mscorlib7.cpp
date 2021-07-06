@@ -44413,6 +44413,84 @@ IL_0045:
 		return (bool)1;
 	}
 }
+// System.Boolean System.Number::TryParseSingle(System.String,System.Globalization.NumberStyles,System.Globalization.NumberFormatInfo,System.Single&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Number_TryParseSingle_mFC57B6D52A73CAD853D24FB285014E0C037F5D3E (String_t* ___value0, int32_t ___options1, NumberFormatInfo_t58780B43B6A840C38FD10C50CDFE2128884CAD1D * ___numfmt2, float* ___result3, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&NumberBuffer_t5EC5B27BA4105EA147F2DE7CE7B96D7E9EAC9271_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	uint8_t* V_0 = NULL;
+	NumberBuffer_t5EC5B27BA4105EA147F2DE7CE7B96D7E9EAC9271  V_1;
+	memset((&V_1), 0, sizeof(V_1));
+	double V_2 = 0.0;
+	float V_3 = 0.0f;
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(NumberBuffer_t5EC5B27BA4105EA147F2DE7CE7B96D7E9EAC9271_il2cpp_TypeInfo_var);
+		int32_t L_0 = ((NumberBuffer_t5EC5B27BA4105EA147F2DE7CE7B96D7E9EAC9271_StaticFields*)il2cpp_codegen_static_fields_for(NumberBuffer_t5EC5B27BA4105EA147F2DE7CE7B96D7E9EAC9271_il2cpp_TypeInfo_var))->get_NumberBufferBytes_0();
+		int8_t* L_1 = (int8_t*) alloca(((uintptr_t)L_0));
+		memset(L_1, 0, ((uintptr_t)L_0));
+		V_0 = (uint8_t*)(L_1);
+		uint8_t* L_2 = V_0;
+		NumberBuffer__ctor_m974731F7F82979DC89F09CC5450E3EB91D4F6ACC((NumberBuffer_t5EC5B27BA4105EA147F2DE7CE7B96D7E9EAC9271 *)(&V_1), (uint8_t*)(uint8_t*)L_2, /*hidden argument*/NULL);
+		float* L_3 = ___result3;
+		*((float*)L_3) = (float)(0.0f);
+		V_2 = (0.0);
+		String_t* L_4 = ___value0;
+		int32_t L_5 = ___options1;
+		NumberFormatInfo_t58780B43B6A840C38FD10C50CDFE2128884CAD1D * L_6 = ___numfmt2;
+		bool L_7;
+		L_7 = Number_TryStringToNumber_mF973092886F78E5185AE9B587E9F13E02CE86029(L_4, L_5, (NumberBuffer_t5EC5B27BA4105EA147F2DE7CE7B96D7E9EAC9271 *)(&V_1), L_6, (bool)0, /*hidden argument*/NULL);
+		if (L_7)
+		{
+			goto IL_0031;
+		}
+	}
+	{
+		return (bool)0;
+	}
+
+IL_0031:
+	{
+		uint8_t* L_8;
+		L_8 = NumberBuffer_PackForNative_mEC599EE4E3DCCB7FAE394D8FEFE520E6D0CEE116((NumberBuffer_t5EC5B27BA4105EA147F2DE7CE7B96D7E9EAC9271 *)(&V_1), /*hidden argument*/NULL);
+		bool L_9;
+		L_9 = Number_NumberBufferToDouble_mDF08DBC44C84C380BC2115A51EF343971E8776EC((uint8_t*)(uint8_t*)L_8, (double*)(&V_2), /*hidden argument*/NULL);
+		if (L_9)
+		{
+			goto IL_0043;
+		}
+	}
+	{
+		return (bool)0;
+	}
+
+IL_0043:
+	{
+		double L_10 = V_2;
+		V_3 = ((float)((float)L_10));
+		float L_11 = V_3;
+		bool L_12;
+		L_12 = Single_IsInfinity_m10D3B235800230231AFC34AFEC4D320D06F794C1(L_11, /*hidden argument*/NULL);
+		if (!L_12)
+		{
+			goto IL_0050;
+		}
+	}
+	{
+		return (bool)0;
+	}
+
+IL_0050:
+	{
+		float* L_13 = ___result3;
+		float L_14 = V_3;
+		*((float*)L_13) = (float)L_14;
+		return (bool)1;
+	}
+}
 // System.Boolean System.Number::TryStringToNumber(System.String,System.Globalization.NumberStyles,System.Number/NumberBuffer&,System.Globalization.NumberFormatInfo,System.Boolean)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Number_TryStringToNumber_mF973092886F78E5185AE9B587E9F13E02CE86029 (String_t* ___str0, int32_t ___options1, NumberBuffer_t5EC5B27BA4105EA147F2DE7CE7B96D7E9EAC9271 * ___number2, NumberFormatInfo_t58780B43B6A840C38FD10C50CDFE2128884CAD1D * ___numfmt3, bool ___parseDecimal4, const RuntimeMethod* method)
 {
